@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gordó Llobell | Propiedad Intelectual & Asuntos Regulatorios</title>
+  <meta name="description" content="Estudio jurídico especializado en propiedad intelectual y asuntos regulatorios. Asesoramiento en marcas, patentes y derechos de autor desde 1946.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+
+   <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo-link" aria-label="Ir al inicio">
+        <img src="recursos/Logo Gll.svg" alt="Logo Gordó Llobell">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span class="hamburger"></span>
+      </button>
+      <div class="menu-wrapper">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Áreas de práctica <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="areas-propiedad-intelectual.html">Propiedad Intelectual</a></li>
+              <li><a href="areas-asuntos-regulatorios.html">Asuntos Regulatorios</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Nosotros <span class="arrow">▼</span></a>
+            <ul class="dropdown-menu">
+              <li><a href="nosotros-historia.html">Historia</a></li>
+              <li><a href="nosotros-equipo.html">Equipo</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <img class="secondary-logo" src="recursos/Logo PI AARR.svg">
+    </div>
+  </nav>
+
+  
+  <header class="page-header animate-on-scroll">
+    <div class="page-header-content">
+      <h1>Contacto</h1>
+      <p>Estamos aquí para ayudarte</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-form-section animate-on-scroll">
+      <div class="contact-form-wrapper">
+        <div class="contact-form-text">
+          <h2>Envíanos tu consulta</h2>
+          <p>
+            Completa el formulario y nos pondremos en contacto contigo a la brevedad. Nuestro equipo de profesionales está listo para brindarte el asesoramiento que necesitas.
+          </p>
+          <div >
+            <img src="recursos/Imagen oficina.png" class=" contact-image" >
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="11f8e410-4392-466f-8ac8-e15577399d85">
+            <input type="hidden" name="redirect" value="https://www.gllobell.com.ar/gracias.html">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej: Nombre Apellido" required />
+              <small class="error-message" id="error-nombre"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+              <small class="error-message" id="error-email"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="codigoArea">Código de área *</label>
+              <input type="tel" id="codigoArea" name="codigoArea" placeholder="Ej: 54" maxlength="4" required />
+              <small class="error-message" id="error-codigoArea"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej: 1234567890" maxlength="10" required />
+              <small class="error-message" id="error-telefono"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Asunto *</label>
+              <select id="asunto" name="asunto" required>
+                <option value="">Selecciona un asunto</option>
+                <option value="propiedad-intelectual">Propiedad Intelectual</option>
+                <option value="asuntos-regulatorios">Asuntos Regulatorios</option>
+                <option value="consulta-general">Consulta General</option>
+                <option value="otro">Otro</option>
+              </select>
+              <small class="error-message" id="error-asunto"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Tu consulta *</label>
+              <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu consulta aquí..." required></textarea>
+              <small class="error-message" id="error-mensaje"></small>
+            </div>
+
+            <button type="submit" class="btn">Enviar Consulta</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact-info-section animate-on-scroll">
+      <div class="contact-info-grid">
+        <div class="contact-info-card">
+          <div class="contact-icon">📍</div>
+          <h3>Dirección</h3>
+          <p>Sarmiento 944 Piso 2</p>
+          <p>Buenos Aires, Argentina</p>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">📞</div>
+          <h3>Teléfono</h3>
+          <p>(+54 11) 4394-0050</p>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">✉️</div>
+          <h3>Email</h3>
+          <p>info@gllobell.com.ar</p>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">🕐</div>
+          <h3>Horario</h3>
+          <p>Lunes a Viernes</p>
+          <p>09:00 am a 6:00 pm</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section animate-on-scroll">
+      <h2>Nuestra Ubicación</h2>
+    <div class=" map-placeholder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9669252217864!2d-58.382598924098176!3d-34.604997857566154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccace5213a9d9%3A0x1ac5eed600d20198!2sSarmiento%20944%2C%20C1035%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1763565559065!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <img src="recursos/Logo 1946.svg">
+      </div>
+      <div class="footer-col">
+        <p><strong>Info Contacto</strong></p>
+        <p>Sarmiento 944 Piso 2, Bs. As.</p>
+        <p>info@gllobell.com.ar</p>
+        <p>(+54 11) 4394-0050</p>
+      </div>
+      <div class="footer-col">
+        <p><strong>Horario</strong></p>
+        <p>Lunes a Viernes</p>
+        <p>09:00 am a 6:00 pm</p>
+      </div>
+      <div class="footer-col">
+        <p><strong>Redes</strong></p>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Gordó Llobell - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491131089060" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Escribinos por WhatsApp">
+    <img src="recursos/whatsapp-icon.svg" alt="WhatsApp">
+  </a>
+
+</body>
+</html>
