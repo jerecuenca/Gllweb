@@ -289,6 +289,23 @@
   <a href="https://wa.me/5491131089060" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Escribinos por WhatsApp">
     <img src="recursos/whatsapp-icon.svg" alt="WhatsApp">
   </a>
+<script>
+  const btn = document.getElementById("btn-cv");
 
+  const mailtoLink =
+    "mailto:adm@gllobell.com.ar" +
+    "?subject=Postulación laboral" +
+    "&body=Hola,%0D%0A%0D%0AAdjunto mi CV para su consideración.%0D%0A%0D%0ASaludos.";
+
+  const gmailLink =
+    "https://mail.google.com/mail/?view=cm&fs=1" +
+    "&to=adm@gllobell.com.ar" +
+    "&su=Postulación%20laboral" +
+    "&body=Adjunto%20mi%20CV%20para%20su%20consideración.";
+
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  btn.href = isMobile ? mailtoLink : gmailLink;
+</script>
 </body>
 </html>
